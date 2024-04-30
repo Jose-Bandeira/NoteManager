@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class NoteManager {
     Scanner scanner = new Scanner(System.in);
-    private List<Note>notes;
+    private final List<Note>notes;
 
 
     public NoteManager() {

@@ -1,10 +1,11 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         NoteManager noteManager = new NoteManager();
-        while (true){
+        while (true) {
             int option = 0;
             System.out.println("Welcome to the Note Manager!");
             System.out.println("1. Create note");
@@ -22,10 +23,11 @@ public class Main {
                     noteManager.readNote();
                     break;
                 case 3:
-
+                    noteManager.delete();
+                    break;
                 case 4:
-                        noteManager.exit();
-                        break;
+                    noteManager.exit();
+                    break;
                 default:
                     System.out.println("Invalid command. use the numbers 1-4 to access one option. please try again.");
             }
